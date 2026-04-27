@@ -1,1 +1,71 @@
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 2.0</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas:
+            "cabeça cabeça cabeça"
+            "menu conteudo publi"
+            " rodape rodape rodape ";
+            
+        }
+        header {grid-area: cabeça;}
+        aside{grid-area: menu;}
+        main{grid-area: conteudo;}
+        section {grid-area: publi;}
+        footer {grid-area: rodape;}
+      
+        /* jeito mais complexo ↓↓↓
+        header{
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+        }
+        aside{
+            background-color: rgb(219, 215, 215);
+            color: rgb(219, 29, 188);
+            position: fixed;
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(223, 25, 25);
+        }
+        section{
+            background-color: bisque;
+            position: fixed;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            height: 100vh;
+            top: 55%;
+            right: 20px;
+            transform: translateY(-50%);
+            width: 200px;
+            padding: 20px;
+            z-index:  1000;
+        }   
+        footer{ 
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Cabeçalho</header>
+        <aside>Menu Lateral</aside>
+        <main>Conteudo Principal</main>
+        <section>Publicidade</section>
+        <footer>Rodapé</footer>
+    </div>
+</body>
+</html>
