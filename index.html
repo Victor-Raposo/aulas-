@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+         }
+
+        div{ 
+            display: inline-block;
+            width: 300px;
+            height: 20px; 
+        }
+
+        a{
+            display: block;
+        }
+
+        h1{
+            display: none;
+            /* visibility: hidden; so se esconde ele n é deletado como o none */
+        }
+    
+        .container {
+            display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: brown;
+          color: aliceblue;
+          height: 50vh;
+        }
+
+        .produdos{
+            background-color: rgb(41, 179, 94);
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+         div{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div>Exemplo 1</div>
+    <div>Exemplo 2</div>
+    <div>Exemplo 3</div> 
+
+    <a href="https://openguessr.com/">open guesser</a> 
+    <a href="https://www.gamedle.wtf/characters#"> joguinho pra descobrir joguinho</a> 
+    <a href="https://github.com/">git hub</a>
+
+    <h1>Elemento a ser ocultado </h1>
+    <h2>TESTE</h2>
+
+    <section class="container">
+        <div>LOGIN</div>
+    </section>
+
+    <section class="produtos">
+        <div>Amaciante</div>
+        <div>Cadeira Gamer</div>
+        <div>teclado de membrana</div>
+    </section>
+
+    
+       
+</body>
+</html>
